@@ -75,15 +75,20 @@
                 <p>Este proyecto es temporal, todo dependerá del comportamiento de los jugadores entre todos, si el resultado es positivo es muy posible que la duración del servidor aumente. Recuerda comportarte y respetar a los demás.</p>
             </div>
 
-            <div>
 
-                <h1 id="screenshots">Capturas</h1>
-
-                <img class="img-screenshot" src="src/screens/screen_01.png" alt="">
-                <img class="img-screenshot" src="src/404.jpg" alt="">
-                <img class="img-screenshot" src="src/404.jpg" alt="">
-
+            <div class="gallery-container" id="screenshots">
+                    <h1>Capturas</h1>
+                    <div class="main-photo">
+                        <img id="main-image" src="src/screens/screen_01.png" alt="Main Photo">
+                    </div>
+                    <div class="thumbnails">
+                        <img src="2024-06-16_02.23.57.png" alt="Thumbnail 1" onclick="changeImage(this)">
+                        <img src="2024-06-20_16.43.43.png" alt="Thumbnail 2" onclick="changeImage(this)">
+                        <img src="2024-06-20_17.06.27.png" alt="Thumbnail 3" onclick="changeImage(this)">
+                        <img src="2024-06-20_17.23.03.png" alt="Thumbnail 4" onclick="changeImage(this)">
+                    </div>
             </div>
+                
 
 
             <div>
@@ -105,9 +110,9 @@
                 respectivos autores.</p>
                 <a href="releases/" class="download-button">Descargar Modpack</a>
 
-                <p>Diviértete lo más que se pueda. <a href="https://emoji.gg/emoji/6827-monikathumbsup"><img
+                <p>Diviértete lo más que se pueda.<img
                             src="https://cdn3.emoji.gg/emojis/6827-monikathumbsup.png" width="50px" height="50px"
-                            alt="MonikaThumbsUp"></a></p>
+                            alt="MonikaThumbsUp"></p>
             </div>
 
             <div>
@@ -118,42 +123,14 @@
                 <h3>IP del servidor: <strong>reyesdatabase.ddns.net</strong></h3>
                 <h3>Jugadores online: <strong id="jugadores"></strong></h3>
                 <h3>Cantidad de Mods activos: <strong id="mods"></strong></h3>
-                <button id="ver-mods" class="download-button">Ver Mods</button>
-
-                <div id="modal" class="modal">
-                    <div class="modal-content">
-                        <span class="close-button">&times;</span>
-                        <h2>Lista de Mods</h2>
-                        <table id="mods-table">
-                            <thead>
-                                <tr>
-                                    <th>Mod</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-
 
             </div>
 
-            <h1 id="contact">Acerca de mí</h1>
+            <h1 id="contact">Acerca de mí: pronto :3</h1>
 
-            <div class="contact-card">
-                <img src="src/profile.webp" alt="AstronautMarkus">
-                <div class="card-content">
-                    <h2>AstronautMarkus</h2>
-                    <p>Analista programador, desarrollador de software y "administador" de sistemas, buscando crear un
-                        servidor divertido para todo público.</p>
-                    <div class="contact-info">
-                        <a href="mailto:astronautmarkus@gmail.com">astronautmarkus@gmail.com</a>
-                        <a href="https://github.com/AstronautMarkus" target="_blank">GitHub</a>
-                    </div>
-                </div>
-            </div>
+
+            
+
 
             <p>Por ahora eso, recuerda que la duración de este proyecto solo dependerá de tí, hasta pronto!</p>
 
@@ -161,14 +138,10 @@
 
         </div>
 
-        
 
     </div>
-
-    
-
     <footer>
-        <p>&copy; 2024 ReyesAndFriends hecho por Marcos Reyes. Todos los derechos reservados.</p>
+        <p>&copy; 2024 ReyesAndFriends hecho por Marcos Reyes. Todos los derechos reservados. </p>
     </footer>
 
     <script src="script.js"></script>

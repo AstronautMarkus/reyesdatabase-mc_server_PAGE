@@ -1,6 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');  /* font */
+/* Definir las fuentes locales */
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/Roboto-Regular.woff2') format('woff2'),
+         url('fonts/Roboto-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
 
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/Roboto-Bold.woff2') format('woff2'),
+         url('fonts/Roboto-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
 
+/* Aplicar las fuentes a los elementos */
 h1 {
     font-family: 'Roboto', sans-serif;
     font-weight: 700; /* Roboto Bold */
@@ -30,7 +45,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
+    max-width: 900px;
     margin: auto;
     padding: 0 20px;
 }
@@ -179,7 +194,8 @@ footer {
     background-color: #333;
     color: #f2f2f2;
     text-align: center;
-    padding: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     position: relative;
     width: 100%;
     bottom: 0;
@@ -338,4 +354,45 @@ td {
 
 th {
     background-color: #f2f2f2;
+}
+.gallery-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.main-photo img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border: 2px solid #ccc;
+    margin-bottom: 20px;
+}
+
+.thumbnails {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.thumbnails img {
+    width: 100px;
+    height: auto;
+    cursor: pointer;
+    border: 2px solid #ccc;
+    transition: transform 0.2s;
+}
+
+.thumbnails img:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    .main-photo img {
+        max-width: 100%;
+    }
+
+    .thumbnails img {
+        width: 80px;
+    }
 }

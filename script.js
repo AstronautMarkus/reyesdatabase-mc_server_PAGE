@@ -112,3 +112,17 @@ function cargarListaDeMods() {
         "<tr><td>Error al cargar la lista de mods.</td></tr>";
     });
 }
+
+function changeImage(element) {
+  var mainImage = document.getElementById('main-image');
+  mainImage.src = element.src;
+}
+
+
+document.addEventListener('visibilitychange', function() {
+  if (document.hidden) {
+      document.title = '¡Vuelve pronto!';
+  } else {
+      document.title = 'Reyes&Friends server modpack';
+  }
+});
